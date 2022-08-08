@@ -6,6 +6,15 @@
             let nombre = ""
             nombre = prompt("Cual es tu nombre? ")
             alert("Bienvenida " + nombre)
+
+            var qrcode = new QRCode(document.getElementById("qrcode"), {
+                text: "https://www.ribosomatic.com",
+                width: 128,
+                height: 128,
+                colorDark : "#000000",
+                colorLight : "#ffffff",
+                correctLevel : QRCode.CorrectLevel.H
+            });
         </script>
         <body>
 <h1>Primer intento de website</h1>
