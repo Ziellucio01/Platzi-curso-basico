@@ -13,9 +13,11 @@
     <script type="text/javascript" src="qrcode_UTF8.js"></script>
 -->
     <script type="text/javascript" src="sample.js"></script>
-    <title>QR Code Generator for JavaScript</title>
+    <title>Generador QR RESSA</title>
   </head>
   <body onload="body_loadHander()">
+    <br />
+    <h1>Llenado de información RESSA</h1>
     <form name="qrForm">
       <span>TypeNumber:</span>
       <select name="t"></select>
@@ -40,7 +42,9 @@
         <option value="UTF-8" selected>UTF-8</option>
       </select>
       <br/>
-      <textarea name="msg" rows="10" cols="40">here comes qr!</textarea>
+      <div>
+      <textarea name="msg" rows="10" cols="40"></textarea>
+      </div>
       <br/>
       <input type="button" value="update" onclick="update_qrcode()"/>
       <div id="qr"></div>
